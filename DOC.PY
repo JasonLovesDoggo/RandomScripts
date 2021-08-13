@@ -84,7 +84,7 @@ def main(file):
 
 def runmanytimes(times):
     for x in range(times):
-        timesran = 1
+        timesran += 1
         text = f"times ran {timesran}"
         print(text, end='')
         print('\b' * len(text), end='', flush=True)
