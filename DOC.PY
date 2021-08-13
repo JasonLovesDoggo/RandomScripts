@@ -12,7 +12,7 @@ FILE = open(PATH, mode="r+", encoding="UTF-8")
 GOOGLE_DOC_INPUTS = 14
 KEY = 'tab'
 canrun = False
-
+timesran = 0
 def Generator(File):
     for line in File.read().split("\n"):
         yield line
@@ -84,7 +84,7 @@ def main(file):
 
 def runmanytimes(times):
     for x in range(times):
-        timesran += 1
+        timesran + 1
         text = f"times ran {timesran}"
         print(text, end='')
         print('\b' * len(text), end='', flush=True)
@@ -109,7 +109,7 @@ def runmanytimes(times):
 
 def startthis():
     print(f'Hello, {os.getlogin()}! How are you?')
-    runmanytimes(2)
+    runmanytimes(1200)
 
 def stop():
     print("\nstopped")
